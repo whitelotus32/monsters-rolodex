@@ -6,7 +6,9 @@ class CardList extends Component {
         return (
             <div>
                 {monsters.map(monster => (
-                    <h1 key={monster.id}>{monster.name}</h1>
+                    <div className='card-container'>
+                        <img alt={`monsters ${monster.name}`} />
+                    </div>
                 ))}
             </div>
         )
